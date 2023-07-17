@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/bghome"
+    tools:context=".HomeActivity">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Welcome to Dasboard"
+      android:gravity="center"
+      android:textColor="#FFFF"
+      android:textSize="25dp"
+      android:textStyle="bold"
+      android:layout_marginTop="60dp"
+      android:layout_marginBottom="10dp"
+      />
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="119dp"
+      android:layout_margin="10dp"
+      android:backgroundTint="#2B3467"
+      android:clickable="true"
+      app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+      <ImageView
+          android:layout_marginTop="15dp"
+          android:layout_width="70dp"
+          android:layout_height="70dp"
+          android:src="@drawable/apotek" />
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="15dp"
+              android:text="Apotek Keliling"
+              android:textColor="#FFFFFF"
+              android:textSize="20dp" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="15dp"
+              android:text="Nggak Ada Obat!"
+              android:textColor="#FFFFFF"
+              android:textSize="13dp" />
+        </LinearLayout>
+      </RelativeLayout>
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Aktivitas Apotek"
+      android:textSize="20dp"
+      android:textColor="#FFFF"
+      android:textStyle="bold"
+      android:layout_margin="10dp"
+      />
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <com.denzcoskun.imageslider.ImageSlider
+          android:id="@+id/imageSlider"
+          android:layout_width="match_parent"
+          android:layout_height="200dp"
+          app:iss_auto_cycle="true"
+          app:iss_corner_radius="1"
+          app:iss_delay="1000"
+          app:iss_period="1000"
+          app:iss_title_background="@color/purple_500" />
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/btntampil"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Lihat Stok Obat"
+      android:padding="25dp"
+      android:textSize="15dp"
+      android:textStyle="bold"
+      android:layout_gravity="center_horizontal"
+      android:background="@drawable/buttontampil"
+      android:textColor="#FFFF"
+      android:layout_marginTop="10dp"
+      android:drawableLeft="@drawable/tampil"
+      android:layout_marginLeft="2dp" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:orientation="vertical"
+      android:layout_marginTop="10dp"
+      android:gravity="center">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/obat"
+        android:text="Uploud Data Obat"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/data"
+        android:backgroundTint="@color/teal_700"/>
+  </LinearLayout>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="50dp"
+      android:textSize="15dp"
+      android:text="202102331 - Valentino William Rendy"
+      />
+</LinearLayout>
